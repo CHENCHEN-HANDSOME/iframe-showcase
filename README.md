@@ -14,4 +14,7 @@ This project is for embedding an itch.io game.
   - Switched to "Celeste Classic" as an example game that allows embedding.
 - **2023-10-27 (Final Test):**
   - Confirmed `itch.io` platform has strict embedding policies, blocking even Celeste Classic on Vercel.
-  - Switched to "Pac-Man" from `ClassicReload.com` to successfully test the `iframe` functionality. 
+  - Switched to "Pac-Man" from `ClassicReload.com` to successfully test the `iframe` functionality.
+- **2023-10-27 (Root Cause Analysis):**
+  - Analyzed the Vercel deployment and confirmed servers are sending `X-Frame-Options: SAMEORIGIN`.
+  - Switched to the open-source "2048" game, which has no embedding restrictions, as a final working solution. 
