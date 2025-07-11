@@ -11,4 +11,7 @@ This project is for embedding an itch.io game.
   - Added `referrerpolicy="no-referrer"` to the `iframe` as a potential fix.
 - **2023-10-27 (Update):**
   - Confirmed the "STONE" game does not allow embedding.
-  - Switched to "Celeste Classic" as an example game that allows embedding. 
+  - Switched to "Celeste Classic" as an example game that allows embedding.
+- **2023-10-27 (Final Test):**
+  - Confirmed `itch.io` platform has strict embedding policies, blocking even Celeste Classic on Vercel.
+  - Switched to "Pac-Man" from `ClassicReload.com` to successfully test the `iframe` functionality. 
