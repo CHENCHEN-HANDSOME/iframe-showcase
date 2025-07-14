@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Play STONE</title>
+  <title>Hugging Face Space Embed</title>
   <style>
     body {
       background: #111;
@@ -10,6 +10,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      font-family: sans-serif;
     }
     h1 {
       color: white;
@@ -18,16 +19,16 @@
     iframe {
       margin: 20px 0;
       border: none;
-      width: 500px; /* Adjusted for 2048's aspect ratio */
-      height: 580px; /* Adjusted for 2048's aspect ratio */
+      width: 850px;
+      height: 450px;
+      border-radius: 8px;
     }
   </style>
 </head>
 <body>
-  <h1>Play 2048</h1>
+  <h1>Hugging Face Space: Hello World</h1>
   <iframe
-    src="https://gabrielecirulli.github.io/2048/"
-    allowfullscreen>
+    src="https://huggingface.co/spaces/gradio/hello_world?embed=true">
   </iframe>
 </body>
 </html> 

@@ -1,20 +1,19 @@
-# Itch.io Embed Game
+# Hugging Face Space Showcase
 
-This project is for embedding an itch.io game.
+This project demonstrates how to embed a Hugging Face Space into a simple HTML page.
 
-## Change Log
+## Current Demo
 
-- Created `index.html` to embed the "STONE" game from itch.io.
-- **2023-10-27:**
-  - Renamed `index.html.html` to `index.html` for correctness.
-  - Investigated an issue where the `iframe` was blocked by `itch.io`.
-  - Added `referrerpolicy="no-referrer"` to the `iframe` as a potential fix.
-- **2023-10-27 (Update):**
-  - Confirmed the "STONE" game does not allow embedding.
-  - Switched to "Celeste Classic" as an example game that allows embedding.
-- **2023-10-27 (Final Test):**
-  - Confirmed `itch.io` platform has strict embedding policies, blocking even Celeste Classic on Vercel.
-  - Switched to "Pac-Man" from `ClassicReload.com` to successfully test the `iframe` functionality.
-- **2023-10-27 (Root Cause Analysis):**
-  - Analyzed the Vercel deployment and confirmed servers are sending `X-Frame-Options: SAMEORIGIN`.
-  - Switched to the open-source "2048" game, which has no embedding restrictions, as a final working solution. 
+- **Space:** `gradio/hello_world`
+- **Description:** A basic "Hello World" application from Gradio, embedded using an iframe.
+
+## Deployment
+
+This project is configured for deployment on Vercel via GitHub integration.
+
+### Change Log
+
+- **2024-05-22:**
+  - Initial project setup with `index.html` to embed a Hugging Face Space.
+  - Updated project to replace the previous `itch-embed-game` content.
+  - Pushed to GitHub and prepared for Vercel deployment. 
