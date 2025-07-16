@@ -2,9 +2,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Iframe Showcase</title>
+  <title>Hugging Face FLUX.1-dev Showcase</title>
   <style>
-      body {
+      body, html {
           font-family: sans-serif;
           display: flex;
           flex-direction: column;
@@ -12,12 +12,22 @@
           justify-content: center;
           height: 100vh;
           margin: 0;
+          overflow: hidden; /* Hide scrollbars */
+      }
+      iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+      }
+      h1, p {
+          flex-shrink: 0; /* Prevent text from shrinking */
+          padding: 0 20px;
       }
   </style>
 </head>
 <body>
-    <h1>Iframe 嵌入测试页面</h1>
-    <p>这是一个用于测试不同网站嵌入效果的页面。</p>
-    <iframe src="https://www.kongregate.com/games/ScaryBee/slurpy-derpy" width="960" height="540" title="Game Embed"></iframe>
+    <h1>FLUX.1-dev Demo</h1>
+    <p>嵌入来自 Hugging Face 的 AI 应用。</p>
+    <iframe src="https://black-forest-labs-flux-1-dev.hf.space" title="Hugging Face Space"></iframe>
 </body>
 </html> 
