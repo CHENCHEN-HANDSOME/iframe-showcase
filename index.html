@@ -1,27 +1,34 @@
-<html lang="zh-CN">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hugging Face FLUX.1-dev Showcase</title>
-  <style>
-      body, html {
-          margin: 0;
-          padding: 0;
-          overflow: hidden;
-          height: 100%;
-          width: 100%;
-      }
-      gradio-app {
-          height: 100vh;
-          width: 100vw;
-      }
-  </style>
-  <script
-	type="module"
-	src="https://gradio.s3-us-west-2.amazonaws.com/5.25.2/gradio.js"
-    ></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hugging Face FLUX.1-dev Showcase</title>
+    <style>
+        body, html {
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden; /* Hide scrollbars */
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+        h1, p {
+            flex-shrink: 0; /* Prevent text from shrinking */
+            padding: 0 20px;
+        }
+    </style>
 </head>
 <body>
-    <gradio-app src="https://black-forest-labs-flux-1-dev.hf.space"></gradio-app>
+    <h1>FLUX.1-dev Demo</h1>
+    <p>嵌入来自 Hugging Face 的 AI 应用。</p>
+    <iframe src="https://black-forest-labs-flux-1-dev.hf.space" title="Hugging Face Space"></iframe>
 </body>
 </html> 
